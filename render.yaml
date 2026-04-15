@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: witnessready-web
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: CHAT_PROVIDER
+        value: offline
+      - key: HOST
+        value: 0.0.0.0

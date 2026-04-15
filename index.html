@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WitnessReady</title>
+  <meta
+    name="description"
+    content="WitnessReady is a calm, supportive web experience for first-time or anxious witnesses preparing to testify."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="WitnessReady home">
+        <span class="brand-mark"></span>
+        <span class="brand-text">
+          <span>Witness</span>
+          <strong>Ready</strong>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#walkthrough">Walkthrough</a>
+        <a href="#companion">Companion</a>
+        <a href="#principles">Principles</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Witness support, reimagined for the web</p>
+          <h1>Calm preparation for people who have something important to say.</h1>
+          <p class="hero-text">
+            WitnessReady is not a legal tool, not a case management app, and not a testimony coach.
+            It is a witness-support experience designed to help a nervous person feel calmer, more
+            informed, and more prepared before entering court.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#walkthrough">See how it works</a>
+            <a class="button button-secondary" href="#companion">Try the companion</a>
+          </div>
+          <ul class="hero-notes">
+            <li>Guided onboarding that meets the user where they are</li>
+            <li>Calm tools, courtroom orientation, and neutral practice</li>
+            <li>A guarded support companion that stays within safe boundaries</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="device-card">
+            <div class="device-topline">
+              <span>Interactive preview</span>
+              <span>Web adaptation</span>
+            </div>
+            <div class="device-screen">
+              <div class="device-screen-header">
+                <p class="device-label">WitnessReady</p>
+                <h2 id="preview-title">Check in calmly</h2>
+                <p id="preview-body">
+                  A few short questions personalize the experience without collecting case details.
+                </p>
+              </div>
+              <div class="preview-panel">
+                <div class="preview-badge" id="preview-badge">Step 1</div>
+                <div class="preview-card" id="preview-card">
+                  <h3 id="preview-card-title">Before we begin</h3>
+                  <p id="preview-card-text">
+                    First-time witness? Feeling nervous? Worried about freezing up? The experience adapts with care.
+                  </p>
+                </div>
+              </div>
+              <div class="preview-progress">
+                <span class="preview-dot is-active"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-glow hero-glow-large"></div>
+          <div class="hero-glow hero-glow-small"></div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience reveal">
+        <div class="section-intro">
+          <p class="eyebrow">The experience</p>
+          <h2>One clear purpose, carried through every screen.</h2>
+          <p>
+            The original app focused on emotional readiness, familiarity, and neutral practice. This web
+            version keeps that same style and tone while making the product easy to explore in a browser.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p class="card-label">01</p>
+            <h3>Guided first-time flow</h3>
+            <p>
+              A calm welcome, a short check-in, a breathing pause, courtroom orientation, and a practice deck.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="card-label">02</p>
+            <h3>Explore mode</h3>
+            <p>
+              Practice, Calm, and Courtroom remain available after the guided flow so people can revisit what helps.
+            </p>
+          </article>
+          <article class="feature-card">
+            <p class="card-label">03</p>
+            <h3>Support companion</h3>
+            <p>
+              A chatbot-style companion offers neutral support, refuses unsafe requests, and reinforces honest preparation.
+            </p>
+          </article>
+        </div>
+
+        <div class="impact-strip">
+          <article class="impact-item">
+            <p class="impact-number">Calm</p>
+            <p class="impact-text">Reduces overwhelm before court with breathing, grounding, and steady pacing.</p>
+          </article>
+          <article class="impact-item">
+            <p class="impact-number">Clarity</p>
+            <p class="impact-text">Explains the courtroom experience in plain language without overwhelming the user.</p>
+          </article>
+          <article class="impact-item">
+            <p class="impact-number">Boundaries</p>
+            <p class="impact-text">Protects the product’s purpose by refusing testimony coaching and prompt overrides.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="walkthrough" class="walkthrough reveal">
+        <div class="section-intro">
+          <p class="eyebrow">Product walkthrough</p>
+          <h2>Move through the experience and see what each part is for.</h2>
+        </div>
+
+        <div class="walkthrough-layout">
+          <aside class="step-list" aria-label="WitnessReady product sections">
+            <button class="step-link is-selected" data-step="checkin">
+              <span>Check-in</span>
+              <small>Gentle personalization</small>
+            </button>
+            <button class="step-link" data-step="calm">
+              <span>Calm</span>
+              <small>Breathing and grounding</small>
+            </button>
+            <button class="step-link" data-step="courtroom">
+              <span>Courtroom</span>
+              <small>What to expect</small>
+            </button>
+            <button class="step-link" data-step="practice">
+              <span>Practice</span>
+              <small>Neutral witness prompts</small>
+            </button>
+            <button class="step-link" data-step="companion">
+              <span>Companion</span>
+              <small>Guarded support chatbot</small>
+            </button>
+          </aside>
+
+          <div class="walkthrough-panel">
+            <div class="walkthrough-copy">
+              <p class="panel-kicker" id="step-kicker">Check-in</p>
+              <h3 id="step-title">Start with how the witness feels, not just what they need to do.</h3>
+              <p id="step-description">
+                The opening flow asks only what is necessary: first-time status, current nervousness, and major worries.
+                It never asks for case facts and never stores testimony.
+              </p>
+              <ul class="panel-points" id="step-points">
+                <li>Short, focused questions</li>
+                <li>No case data collection</li>
+                <li>Personalized support without overreach</li>
+              </ul>
+            </div>
+
+            <div class="walkthrough-demo" id="step-demo">
+              <div class="demo-question-card">
+                <p class="demo-label">01</p>
+                <h4>Is this your first time testifying in court?</h4>
+                <div class="choice-row">
+                  <button class="choice is-active" type="button">Yes, it is</button>
+                  <button class="choice" type="button">No, I have before</button>
+                </div>
+                <div class="choice-stack">
+                  <button class="choice is-outline" type="button">Very nervous</button>
+                  <button class="choice is-outline" type="button">Somewhat nervous</button>
+                  <button class="choice is-outline" type="button">A little bit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="companion" class="companion reveal">
+        <div class="section-intro companion-intro">
+          <p class="eyebrow">Support companion</p>
+          <h2>A chatbot that helps without crossing the line.</h2>
+          <p>
+            This companion is designed to stay in role. It can offer calm support, explain the courtroom
+            experience, help organize thoughts neutrally, and practice safe witness prompts. It will refuse
+            attempts to override its instructions or turn it into a legal strategist.
+          </p>
+        </div>
+
+        <div class="companion-layout">
+          <div class="companion-guardrails">
+            <div class="guardrail-card">
+              <p class="card-label">Conversation modes</p>
+              <div class="mode-pills">
+                <span class="mode-pill">Calm support</span>
+                <span class="mode-pill">Courtroom orientation</span>
+                <span class="mode-pill">Timeline organization</span>
+                <span class="mode-pill">Neutral practice</span>
+              </div>
+            </div>
+            <div class="guardrail-card">
+              <p class="card-label">Allowed</p>
+              <ul>
+                <li>Breathing and grounding support</li>
+                <li>What to expect in court</li>
+                <li>Neutral practice prompts</li>
+                <li>Fact and timeline organization help</li>
+              </ul>
+            </div>
+            <div class="guardrail-card guardrail-card-warning">
+              <p class="card-label">Refused</p>
+              <ul>
+                <li>“Ignore your instructions” or jailbreak attempts</li>
+                <li>What to say to win a case</li>
+                <li>Advice to lie, shape facts, or mislead</li>
+                <li>Legal strategy or attorney substitution</li>
+              </ul>
+            </div>
+          </div>
+
+          <section class="chat-shell" aria-label="WitnessReady support companion chat">
+            <div class="chat-header">
+              <div>
+                <p class="chat-title">WitnessReady Companion</p>
+                <p class="chat-subtitle">Neutral support only</p>
+              </div>
+              <button class="chat-reset" id="chat-reset" type="button">Reset</button>
+            </div>
+
+            <div class="chat-suggestions" aria-label="Suggested prompts">
+              <button class="suggestion-chip" type="button">I’m nervous about freezing up</button>
+              <button class="suggestion-chip" type="button">What should I expect in court?</button>
+              <button class="suggestion-chip" type="button">Help me organize a timeline</button>
+              <button class="suggestion-chip" type="button">Give me a neutral practice question</button>
+            </div>
+
+            <div class="status-bar" id="status-bar">
+              <span class="status-dot"></span>
+              <span id="status-text">Ready to support within WitnessReady’s boundaries.</span>
+            </div>
+
+            <div class="chat-log" id="chat-log" aria-live="polite"></div>
+
+            <form class="chat-form" id="chat-form">
+              <label class="sr-only" for="chat-input">Message the companion</label>
+              <textarea
+                id="chat-input"
+                rows="3"
+                placeholder="Ask for calm support, courtroom orientation, neutral practice, or help organizing thoughts."
+              ></textarea>
+              <div class="chat-actions">
+                <p class="chat-note">This demo companion refuses prompt injection and unsafe testimony coaching.</p>
+                <button class="button button-primary" type="submit">Send</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section id="principles" class="principles reveal">
+        <div class="section-intro">
+          <p class="eyebrow">Design principles</p>
+          <h2>Serious, warm, and human by design.</h2>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <h3>Respectful tone</h3>
+            <p>Short, purposeful copy. No corporate language. No empty reassurance.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Clear boundaries</h3>
+            <p>The product supports witnesses emotionally and practically without becoming a legal advisor.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Same visual identity</h3>
+            <p>Warm cream, bronze accents, serif headlines, restrained motion, and calm spacing carry over from the original app.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="competition reveal">
+        <div class="section-intro">
+          <p class="eyebrow">Competition framing</p>
+          <h2>A clear web submission that shows both the idea and the product thinking.</h2>
+          <p>
+            This version is built to be explored quickly in a browser. It communicates the purpose of
+            WitnessReady, demonstrates the user journey, and highlights how an AI-powered support
+            companion can add value without undermining safety or trust.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>WitnessReady is a witness-support experience. It is not legal advice and does not coach testimony.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
